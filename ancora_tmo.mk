@@ -122,7 +122,7 @@ PRODUCT_PACKAGES += \
 # Device-specific packages
 PRODUCT_PACKAGES += \
     Snap \
-    Gello
+#    Gello
 
 # AncoraParts
 PRODUCT_PACKAGES += \
