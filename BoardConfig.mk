@@ -51,7 +51,7 @@ BOARD_USES_LEGACY_MMAP := true
 # Kernel
 BOARD_KERNEL_BASE := 0x00400000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_SOURCE := kernel/samsung/msm7x30-common
+TARGET_KERNEL_SOURCE := kernel/samsung/msm7x30
 TARGET_KERNEL_CONFIG := ancora_tmo_defconfig
 
 # Build kernel with GCC 4.9
