@@ -58,7 +58,7 @@ TARGET_KERNEL_CONFIG := ancora_tmo_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # disable block based ota
-BLOCK_BASED_OTA := false
+#BLOCK_BASED_OTA := false
 
 MALLOC_IMPL := dlmalloc
 
