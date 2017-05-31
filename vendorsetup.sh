@@ -19,5 +19,5 @@
 # function: add_lunch_combo generic-eng
 
 sh device/samsung/ancora_tmo/patches/apply.sh
-add_lunch_combo cm_ancora_tmo-userdebug
+add_lunch_combo lineage_ancora_tmo-userdebug
 
