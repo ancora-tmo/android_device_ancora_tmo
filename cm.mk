@@ -7,7 +7,7 @@ $(call inherit-product, $(LOCAL_PATH)/full_ancora_tmo.mk)
 PRODUCT_RELEASE_NAME := ancora_tmo
 
 # Setup device configuration
-PRODUCT_NAME := cm_ancora_tmo
+PRODUCT_NAME := los_ancora_tmo
 PRODUCT_DEVICE := ancora_tmo
 PRODUCT_BRAND := Samsung
 PRODUCT_MANUFACTURER := Samsung
