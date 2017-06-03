@@ -19,31 +19,19 @@ Release Date            | August 2011
 
 This branch is for building CyanogenMod 13.0 (or Android Marshmallow 6.0 AOSP based roms) ROMS.
 
-## Copyright
+ Copyright
 
-#
-# Copyright (C) 2017 The LineageOS Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
 
-# Needed Patches:
-# 1-https://github.com/CyanogenMod/android_frameworks_opt_telephony/commit/8dd84c2dcc51c4d4cd37e1b366ada1015949bc10
-# 2-https://github.com/AriesVE-DevCon-TEAM/android_frameworks_native/commit/10c37980f508fd5f12c091f6676ff80ff85a940f
-# 3-https://github.com/sirmordred/android_bionic/commit/b1e089a5bd0f9eaf0b4f9ab9a58a246c2cb88d23
-# 4-http://review.cyanogenmod.org/#/c/117733/
-# 5-https://github.com/lollipopi9000/android_bionic/commit/0ac7b519a9b817ecbc9aa12efcda4f505a253b39
-# Fixes for camera(legacy vectorimpl)
-# 6-https://github.com/CyanogenMod/android_system_core/commit/04e5e3b697caa1f47c89439415ddd870b3489a8f
-# 7-https://github.com/CyanogenMod/android_system_core/commit/1ff785445828a9a40138d67e1de2a4fbae9680e9
-# 8-revert https://github.com/CyanogenMod/android_bionic/commit/02b1d48d51ffed14442390c80e773f3ac89396ff
+ Copyright (C) 2017 The LineageOS Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
