@@ -4,23 +4,22 @@ Samsung Galaxy Exhibit II 4G
 
 Feature                 | Specification                     
 ----------------------: | :-------------------------------- 
-CPU                     | Single-core 1.4 GHz               
-Chipset                 | Qualcomm Snapdragon S2 MSM8255T   
+CPU                     | Single-core 1.0 GHz               
+Chipset                 | Qualcomm Snapdragon S2 MSM8255   
 GPU                     | Adreno-205                        
 Memory                  | 512MB RAM                         
 Shipped Android Version | 2.3.6                             
 Storage                 | 4 GB                              
 MicroSD                 | Up to 64GB                        
 Battery                 | 1500 mAh                          
-Dimensions              | 115.5 x 59.8 x 11.5 mm            
+Dimensions              | 115 x 60 x 11 mm            
 Display                 | 480 x 800 pixels                  
-Camera                  | 5 MP(Back), 1.3MP(Front)          
+Camera                  | 3.15 MP(Back), 0.3MP(Front)          
 Release Date            | August 2011                       
 
 This branch is for building CyanogenMod 13.0 (or Android Marshmallow 6.0 AOSP based roms) ROMS.
 
  Copyright
-
 
  Copyright (C) 2017 The LineageOS Project
 
