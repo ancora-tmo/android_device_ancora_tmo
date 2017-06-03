@@ -1,26 +1,28 @@
-# Device configuration for Samsung Galaxy W GT-I8150 (ancora_tmo)
+# Device configuration for Samsung Galaxy Exhibit II 4G (ancora_tmo)
+Samsung Galaxy Exhibit II 4G
+=============
 
-## Spec Sheet
+Feature                 | Specification                     
+----------------------: | :-------------------------------- 
+CPU                     | Single-core 1.4 GHz               
+Chipset                 | Qualcomm Snapdragon S2 MSM8255T   
+GPU                     | Adreno-205                        
+Memory                  | 512MB RAM                         
+Shipped Android Version | 2.3.6                             
+Storage                 | 4 GB                              
+MicroSD                 | Up to 64GB                        
+Battery                 | 1500 mAh                          
+Dimensions              | 115.5 x 59.8 x 11.5 mm            
+Display                 | 480 x 800 pixels                  
+Camera                  | 5 MP(Back), 1.3MP(Front)          
+Release Date            | August 2011                       
 
-| Feature                 | Specification                     |
-| :---------------------- | :-------------------------------- |
-| CPU                     | Single-core 1.4 GHz               |
-| Chipset                 | Qualcomm Snapdragon S2 MSM8255T   |
-| GPU                     | Adreno-205                        |
-| Memory                  | 512MB RAM                         |
-| Shipped Android Version | 2.3.6                             |
-| Storage                 | 4 GB                              |
-| MicroSD                 | Up to 64GB                        |
-| Battery                 | 1500 mAh                          |
-| Dimensions              | 115.5 x 59.8 x 11.5 mm            |
-| Display                 | 480 x 800 pixels                  |
-| Camera                  | 5 MP(Back), 1.3MP(Front)          |
-| Release Date            | August 2011                       |
+This branch is for building CyanogenMod 13.0 (or Android Marshmallow 6.0 AOSP based roms) ROMS.
 
 ## Copyright
 
 #
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
