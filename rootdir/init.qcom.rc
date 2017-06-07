@@ -303,14 +303,6 @@ service iprenew_bt-pan /system/bin/dhcpcd -n
     disabled
     oneshot
 
-service rmt_storage /system/bin/rmt_storage
-    class main
-    user root
-    disabled
-
-on property:ro.boot.emmc=true
-    start rmt_storage
-
 service get_macaddrs /system/bin/get_macaddrs
     class main
     user root
