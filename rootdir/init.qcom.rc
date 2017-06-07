@@ -33,6 +33,8 @@ on init
     symlink /storage/usbdisk /usbdisk
     symlink /storage/usbdisk /mnt/usbdisk
 
+    export LD_SHIM_LIBS "/system/lib/hw/camera.msm7x30.so|libshim_native.so:/system/lib/libril.so|libshim_ril.so:/system/lib/hw/sensors.ancora.so|libshim_native.so:/system/lib/libseccameraadaptor.so|libshim_native.so"
+
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
