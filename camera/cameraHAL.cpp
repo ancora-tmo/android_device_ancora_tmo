@@ -367,6 +367,18 @@ static void CameraHAL_FixupParams(android::CameraParameters &camParams, priv_cam
         camParams.set(android::CameraParameters::KEY_PREFERRED_PREVIEW_SIZE_FOR_VIDEO,
                   preferred_size);
     }
+	
+	camParams.set(android::CameraParameters::KEY_SUPPORTED_FLASH_MODES, "off,auto,on,torch");
+    camParams.set(android::CameraParameters::KEY_FLASH_MODE, "off");
+
+    int rotation = camParams.getInt(android::CameraParameters::KEY_ROTATION);
+    if (rotation == 90){
+        camParams.set(android::CameraParameters::KEY_ROTATION, "0");
+    }
+    if (rotation == 270){
+        camParams.set(android::CameraParameters::KEY_ROTATION, "180");
+    }
+
 
     if (dev->cameraid == CAMERA_ID_FRONT) {
         camParams.set(android::CameraParameters::KEY_SUPPORTED_EFFECTS, "");
@@ -384,9 +396,8 @@ static void CameraHAL_FixupParams(android::CameraParameters &camParams, priv_cam
         camParams.set(android::CameraParameters::KEY_SUPPORTED_FOCUS_MODES, "auto,macro");
         camParams.set(android::CameraParameters::KEY_SUPPORTED_ISO_MODES, "auto,ISO50,ISO100,ISO200,ISO400");
 
-        camParams.set(android::CameraParameters::KEY_MAX_ZOOM, "8");
-        camParams.set(android::CameraParameters::KEY_ZOOM_RATIOS, "100,125,150,175,200,225,250,275,300");
-        camParams.set(android::CameraParameters::KEY_ZOOM_SUPPORTED, CameraParameters::TRUE);
+        camParams.set(android::CameraParameters::KEY_MAX_ZOOM, "0");
+        camParams.set(android::CameraParameters::KEY_ZOOM_SUPPORTED, CameraParameters::FALSE);
 
         camParams.set(android::CameraParameters::KEY_SUPPORTED_PREVIEW_FRAME_RATES, "30");
     }
