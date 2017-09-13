@@ -1,6 +1,5 @@
 /*
- * Copyright (C) 2012 The Android Open Source Project
- * Copyright (C) 2012 The CyanogenMod Project <http://www.cyanogenmod.org>
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,22 +14,7 @@
  * limitations under the License.
  */
 
-#ifndef _BDROID_BUILDCFG_H
-#define _BDROID_BUILDCFG_H
-
-#define BTM_DEF_LOCAL_NAME   "Galaxy Exhibit II 4G"
-/*
-#define SC_MODE_INCLUDED FALSE
-#define BTA_BLE_SKIP_CONN_UPD TRUE
-#define BTA_SKIP_BLE_READ_REMOTE_FEAT TRUE
-*/
-
-#define BLE_INCLUDED FALSE
-#define BTA_GATT_INCLUDED FALSE
-#define SMP_INCLUDED FALSE
-
-#define REMOVE_EAGER_THREADS FALSE
-#define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
-#define LEGACY_BRCM_HCI TRUE
-
-#endif
+const char* linker_non_pie_executables[] {
+"/system/bin/rild",
+"/system/bin/rmt_storage"
+};

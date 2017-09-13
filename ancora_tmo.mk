@@ -44,10 +44,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml \
     $(LOCAL_PATH)/media/media_codecs.xml:system/etc/media_codecs.xml \
-    $(LOCAL_PATH)/media/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
     $(LOCAL_PATH)/media/media_profiles.xml:system/etc/media_profiles.xml
+
+#ext  Media configuration currently disabled
+#PRODUCT_COPY_FILES += \
+#    frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml \
+#    $(LOCAL_PATH)/media/media_codecs_performance.xml:system/etc/media_codecs_performance.xml
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
@@ -56,10 +59,10 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.qcom.rc:root/init.qcom.rc \
+    $(LOCAL_PATH)/rootdir/init.qcom.power.rc:root/init.recovery.qcom.rc \
     $(LOCAL_PATH)/rootdir/init.qcom.usb.rc:root/init.qcom.usb.rc \
     $(LOCAL_PATH)/rootdir/ueventd.qcom.rc:root/ueventd.qcom.rc \
-    $(LOCAL_PATH)/rootdir/fstab.qcom:root/fstab.qcom \
-    $(LOCAL_PATH)/recovery/twrp.fstab:recovery/root/etc/twrp.fstab
+    $(LOCAL_PATH)/rootdir/fstab.qcom:root/fstab.qcom
 
 # Wifi calibration
 PRODUCT_COPY_FILES += \
@@ -119,18 +122,18 @@ PRODUCT_PACKAGES += \
     libexifa \
     libjpega
 
+# Gello
+#PRODUCT_PACKAGES += \
+#    Gello \
+#    Snap
+
 # Device-specific packages
 PRODUCT_PACKAGES += \
-    Snap \
-#    Gello
-
-# AncoraParts
-PRODUCT_PACKAGES += \
-    AncoraParts \
+    AncoraParts
 
 # Libshims
 PRODUCT_PACKAGES += \
-    libshim_native \
+    libshim_camera \
     libshim_ril
 
 # IPv6 tethering
@@ -144,7 +147,6 @@ PRODUCT_PACKAGES += \
 
 # WPA supplicant
 PRODUCT_PACKAGES += \
-    dhcpcd.conf \
     hostapd \
     libwpa_client \
     wpa_supplicant \
@@ -159,4 +161,4 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 
 $(call inherit-product-if-exists, vendor/samsung/ancora_tmo/device-vendor.mk)
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329/device-bcm.mk)
-$(call inherit-product, device/qcom/sepolicy/sepolicy.mk)
+$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)

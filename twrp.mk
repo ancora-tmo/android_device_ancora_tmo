@@ -1,5 +1,4 @@
-# Copyright (C) 2013 The Android Open Source Project
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2017, The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,11 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := $(call my-dir)
-
-include $(CLEAR_VARS)
-LOCAL_SRC_FILES := healthd_board_default.cpp
-LOCAL_MODULE := libhealthd.msm
-LOCAL_C_INCLUDES := system/core/healthd/include bootable/recovery
-include $(BUILD_STATIC_LIBRARY)
-
+RECOVERY_VARIANT := twrp
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_FSTAB := device/samsung/ancora/rootdir/twrp.fstab
+TW_TARGET_USES_QCOM_BSP := true
+TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.196609/leds/lcd-backlight/brightness
+TW_CUSTOM_POWER_BUTTON := 107
+RECOVERY_SDCARD_ON_DATA := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_HAS_DOWNLOAD_MODE := true
+TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+TW_NEW_ION_HEAP := true
+TW_NO_CPU_TEMP := true
