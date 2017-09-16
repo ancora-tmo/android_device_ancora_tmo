@@ -14,7 +14,7 @@
 
 RECOVERY_VARIANT := twrp
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_FSTAB := device/samsung/ancora/rootdir/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/ancora_tmo/rootdir/twrp.fstab
 TW_TARGET_USES_QCOM_BSP := true
 TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.196609/leds/lcd-backlight/brightness
 TW_CUSTOM_POWER_BUTTON := 107
